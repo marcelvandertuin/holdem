@@ -1,0 +1,84 @@
+section.card{
+	justify-content:center;
+	align-items:center;
+	width:46px;
+	height:69px;
+	display:inline-block;
+	border-radius:7px;
+	padding:3px;
+	margin:0px 4px;
+	border:3px solid #d7bc31;
+}
+section.cardRank{
+	width:44px;
+	height:30px;
+	font-weight:bold;
+	font-size:33px;
+	text-align:center;
+	border-radius:7px;
+	margin:0px 0px 4px 0px;
+	line-height:35px;
+}
+section.cardSuit{
+	width:44px;
+	height:30px;
+	border-radius:7px;
+	font-weight:bold;
+	font-size:45px;
+	text-align:center;
+	border-radius:7px;
+	line-height:28px;	
+}
+.cardColor_b{
+	color:#d7bc31;
+}
+.cardColor_r{
+	color:#d7bc31;
+}
+section.blinds{
+	height:18px;
+	width:20px;
+	color:#d7bc31;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:50%;
+	padding:6px 5px 5px 4px;
+	border:3px solid #d7bc31;
+}
+section.dealer{
+	height:18px;
+	width:20px;
+	color:#F7F7F2;
+	font-size:17px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:26px;
+	padding:2px 1px 2px 1px;
+	border:3px solid #F7F7F2;
+	margin:150px 30px -50px 10px;
+}
+a.actionBtns{
+	outline:none;
+	background-color:none;
+	color:#d7bc31;
+	border:3px solid #d7bc31;
+	padding:0 13px 1px 13px;
+	font-weight:bold;
+	font-size:16px;
+	border-radius:20px;
+	cursor:pointer;
+	text-decoration:none;
+}
+a.actionBtns:hover {
+	color:#F7F7F2;
+	border:3px solid #F7F7F2;	
+}
+span.dots{
+	background-color:#d7bc31;
+	height:10px;
+	width:10px;
+	margin:0 2px 0 0;
+	display:inline-block;
+	border-radius:5px;
+}  

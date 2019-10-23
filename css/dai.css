@@ -1,0 +1,67 @@
+section#dai{
+	grid-area:dai;
+}
+section.top{
+	grid-area:top;
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-template-areas:
+		"void_0 stats_0 button_0 ";
+}
+section#button_0{
+	grid-area:button_0;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section#stats_0{
+	grid-area:stats_0;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-auto-rows:8.32vh;
+	grid-template-areas:
+		"amount_0"
+		"hand_0"		
+		"info_0"
+		"status_0";
+}
+section#amount_0{
+	grid-area:amount_0;
+	color:#F7F7F2;
+	font-weight:bold;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section#hand_0{
+	grid-area:hand_0;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	font-weight:bold;
+}
+section#status_0{
+	grid-area:status_0;
+	color:#F7F7F2;
+	font-weight:bold;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	visibility:hidden;
+}
+section#info_0{
+	grid-area:info_0;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	color:#F7F7F2;
+	font-weight:bold;
+	text-align:center;
+}
+section#void_0{
+	grid-area:void_0;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	font-weight:bold;
+}

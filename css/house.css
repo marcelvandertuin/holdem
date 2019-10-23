@@ -1,0 +1,54 @@
+section.center{
+	grid-area:center;
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-auto-rows:11.1vh;
+	grid-template-areas:
+		". holdem ." 
+		"board board board" 
+		". potAction .";
+}
+section#holdem{
+	grid-area:holdem;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section#holdem img{
+	height:65px;
+	width:auto;
+	margin-bottom:-30px;
+}
+section#board{
+	grid-area:board;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	margin-top: -19px;
+}
+section.potAction{
+	grid-area:potAction;
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-auto-rows:5.5vh;
+	grid-template-areas:
+		"pot pot pot" 
+		"potInfo potInfo potInfo"; 
+}
+section#pot{
+	grid-area:pot;
+	color:#F7F7F2;
+	font-weight:bold;
+    justify-content:center;
+    align-items:center;	
+	text-align:center;
+	margin-top: -6px;	
+}
+section#potInfo{
+	grid-area:potInfo;
+	color:#F7F7F2;
+	font-weight:bold;
+	display:flex;
+    justify-content:center;
+    align-items:center;	
+}

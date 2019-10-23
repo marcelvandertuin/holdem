@@ -1,0 +1,63 @@
+section.bottom{
+	grid-area:bottom;
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-template-areas:
+		"button_1 stats_1 void_1";
+}
+section#void_1{
+	grid-area:void_1;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	font-weight:bold;
+}
+section#stats_1{
+	grid-area:stats_1;
+	display:grid;
+	grid-template-columns:1fr;	
+	grid-auto-rows:8.32vh;
+	grid-template-areas:
+		"status_1"
+		"info_1"	
+		"hand_1"
+		"amount_1";
+}
+section#info_1{
+	grid-area:info_1;
+	color:#F7F7F2;
+	font-weight:bold;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	text-align:center;
+}
+section#status_1{
+	grid-area:status_1;
+	display:flex;
+	color:#F7F7F2;
+	font-weight:bold;
+    justify-content:center;
+    align-items:center;
+	visibility:hidden;
+}
+section#hand_1{
+	grid-area:hand_1;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section#amount_1{
+	grid-area:amount_1;
+	color:#F7F7F2;
+	font-weight:bold;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section#button_1{
+	grid-area:button_1;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
