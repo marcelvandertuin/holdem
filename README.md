@@ -1,3 +1,3 @@
 # [holdem](http://holdem.marcelvandertuin.com/)
 
-Card game against learning machine brainJs.
+Card game against learning machine with brainJs.
