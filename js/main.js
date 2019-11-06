@@ -1,7 +1,7 @@
 const outputPlayerControlsMobile = () => {
 	player = 1;
 	let table 		= document.querySelector('section#void_1');
-	let controls 	= makeNode('section', [['class', 'controlsMobile']]);	
+	let controls	= makeNode('section', [['class', 'controlsMobile']]);	
 	let ul			= makeNode('ul', []);
 	let liFold		= makeNode('li', []);
 	let liAllIn		= makeNode('li', []);
@@ -34,7 +34,7 @@ const outputPlayerControlsMobile = () => {
 const outputPlayerControlsDesktop = () => {
 	player = 1;
 	let table 		= document.querySelector('section#controls');
-	let controls 	= makeNode('section', [['class', 'controlsDesktop']]);	
+	let controls	= makeNode('section', [['class', 'controlsDesktop']]);	
 	let ul			= makeNode('ul', []);
 	let liFold		= makeNode('li', []);
 	let liAllIn		= makeNode('li', []);

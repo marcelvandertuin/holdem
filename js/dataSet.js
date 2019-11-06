@@ -1,8 +1,8 @@
 /*
-0 int fold									0.125
-1 int call/ check							0.375
-2 int all in, amount int (multiple of 500)	0.625
-3 int bet,  amount int( multiple of 500)	0.875
+0 int fold 0.125
+1 int call/ check 0.375
+2 int all in, amount int (multiple of 500) 0.625
+3 int bet,  amount int( multiple of 500) 0.875
 
 cards divided by 1000
 pot divided by 100000

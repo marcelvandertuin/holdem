@@ -26,7 +26,7 @@ const evaluateCardByRank = (holdem) => {
 	switch(holdem){
 		case 0:
 			evaluateSingleRankCard();
-		break;
+			break;
 		case 1:
 			evaluateSingleRankCard();
 			break;
@@ -189,7 +189,7 @@ const holdemHand = (num) => {
 	switch(num) {
 		case 0:
 			return 'high card';
-		break;
+			break;
 		case 1:
 			return 'one pair';
 			break;

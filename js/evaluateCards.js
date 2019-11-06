@@ -43,7 +43,7 @@ const checkTotalRanks = (showdown, player, totalRanks) => {
 }
 
 const checkConsecutiveCards = (totalRanksData, threeKey, twoKey) => {	
-	let ranks  = convertObjectToArray(totalRanksData);
+	let ranks = convertObjectToArray(totalRanksData);
 	let allRanks = removeDuplicatesFromArray(totalRanksData, ranks);
 	let indexes = getIndexesFromArray(totalRanksData, allRanks);
 	let sequence = getConsecutiveIndexesFromArray(totalRanksData, indexes, allRanks);	
@@ -122,15 +122,15 @@ const convertObjectToArray = (totalRanksData) => {
 
 const removeDuplicatesFromArray = (totalRanksData, ranks) => {
 	let duplicates = {};
-    let allRanks = [];
-    for(let i = 0; i < ranks.length; i++) {
-        if(!(ranks[i] in duplicates)) {
-            allRanks.push(ranks[i]);
-            duplicates[ranks[i]] = true;
-        }else{
+	let allRanks = [];
+	for(let i = 0; i < ranks.length; i++) {
+		if(!(ranks[i] in duplicates)) {
+			allRanks.push(ranks[i]);
+			duplicates[ranks[i]] = true;
+		}else{
 			 duplicates[ranks[i]] = false;		
 		}		
-    }
+	}
 	return allRanks;
 }
 
