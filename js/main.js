@@ -4,8 +4,8 @@ const outputPlayerControlsMobile = () => {
 	let controls = makeNode('section', [['class', 'controlsMobile']]);	
 	let ul = makeNode('ul', []);
 	let liFold = makeNode('li', []);
-	let liAllIn	= makeNode('li', []);
-	let liCheck	= makeNode('li', []);
+	let liAllIn = makeNode('li', []);
+	let liCheck = makeNode('li', []);
 	let liUp = makeNode('li', []);
 	let liDown = makeNode('li', []);
 	let liBet = makeNode('li', []);
