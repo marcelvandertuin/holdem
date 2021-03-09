@@ -31,7 +31,7 @@ section.controlsDesktop ul li a{
 	font-weight:bold;
 	cursor:pointer;
 }
-section.controlsDesktop ul li a:hover {
+section.controlsDesktop ul li a:hover{
 	color:#F7F7F2;
 }
 section.controlsMobile{
@@ -60,6 +60,6 @@ section.controlsMobile ul li a{
 	font-weight:bold;
 	cursor:pointer;
 }
-section.controlsMobile ul li a:hover {
+section.controlsMobile ul li a:hover{
 	color:#F7F7F2;
 }

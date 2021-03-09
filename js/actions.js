@@ -83,7 +83,8 @@ const flop = () => {
 		let result = first[i].split(' ');
 		let card = makeNode('section', [['class', 'card']]);
 		let cardRank = makeNode('section', [['class', `cardRank cardColor_${result[1].substring(1, 2)}`]], convertCards(result[0]));
-		let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]], result[1].substring(0, 1));
+		let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]]);		
+		cardSuit.innerHTML = setSuit(result[1].substring(0, 1));		
 		card.appendChild(cardRank);
 		card.appendChild(cardSuit);
 		document.querySelector('section#board').appendChild(card);		
@@ -95,7 +96,8 @@ const turn = () => {
 	let result = house[3].split(' ');
 	let card = makeNode('section', [['class', 'card']]);
 	let cardRank = makeNode('section', [['class', `cardRank cardColor_${result[1].substring(1, 2)}`]], convertCards(result[0]));
-	let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]], result[1].substring(0, 1));
+	let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]]);	
+	cardSuit.innerHTML = setSuit(result[1].substring(0, 1));	
 	card.appendChild(cardRank);
 	card.appendChild(cardSuit);
 	document.querySelector('section#board').appendChild(card);	
@@ -106,7 +108,8 @@ const river = () => {
 	let result = house[4].split(' ');
 	let card = makeNode('section', [['class', 'card']]);
 	let cardRank = makeNode('section', [['class', `cardRank cardColor_${result[1].substring(1, 2)}`]], convertCards(result[0]));
-	let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]], result[1].substring(0, 1));
+	let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]]);	
+	cardSuit.innerHTML = setSuit(result[1].substring(0, 1));	
 	card.appendChild(cardRank);
 	card.appendChild(cardSuit);
 	document.querySelector('section#board').appendChild(card);

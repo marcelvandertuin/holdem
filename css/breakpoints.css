@@ -1,12 +1,9 @@
 @media screen and (max-width:1400px){
-	section.table{
-		grid-template-columns:repeat(2, 1fr);
-		grid-auto-rows:33.3vh;
-		height:100vh;
+	section.overlay{
+		grid-template-columns:repeat(6, 1fr);
 		grid-template-areas:
-			"top dai"
-			"center controls"
-			"bottom .";
+			"overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand"
+			". overlay_suit_1 overlay_suit_2 overlay_suit_3 overlay_suit_4 .";
 	}
 }
 
@@ -22,7 +19,13 @@
 			"top"
 			"center"
 			"bottom";
-	}
+	}	
+	section.overlay{
+		grid-template-columns:repeat(4, 1fr);
+		grid-template-areas:
+			"overlay_brand overlay_brand overlay_brand overlay_brand"
+			"overlay_suit_1 overlay_suit_2 overlay_suit_3 overlay_suit_4";
+	}	
 	section.card{
 		width:28px;
 		height:49px;
@@ -35,14 +38,13 @@
 		font-size:23px;		
 		margin:0px 0px 10px 0px;
 		line-height:20px;
-		padding-left:2px;
 	}
 	section.cardSuit{
 		width:24px;
 		height:10px;		
 		font-size:35px;	
 		line-height:28px;
-		padding-left:2px;		
+		padding-left:1px;		
 	}
 	section#stats_0{
 		font-size:14px;		
@@ -76,5 +78,73 @@
 	}
 	a.actionBtns{
 		font-size:14px;
+	}
+}
+
+@media screen and (max-width:576px){
+	.overlay_brand_image{
+		height:120px;
+	}	
+	section#holdem img{
+		height:41px;
+		margin-bottom:-30px;
+	}	
+	.actionBtns_start{
+		margin-top:-42px;
+	}	
+	section.card{
+		width:20px;
+		height:41px;
+		border-radius:5px;
+		border:2px solid #d7bc31;
+	}
+	section.cardRank{
+		width:16px;
+		height:10px;
+		font-size:18px;
+		letter-spacing:-3px;
+	}
+	section.cardSuit{
+		width:16px;
+		font-size:18px;
+		margin-left:1px;
+		line-height:28px;
+	}
+	.suit_image{
+		height:15px;
+	}
+	section.blinds{
+		font-size:13px;
+		padding:7px 4px 4px 5px;
+		border:2px solid #d7bc31;
+	}
+	section.controlsMobile ul{
+		border:2px solid #d7bc31;
+	}
+	a.actionBtns{
+		font-size:12px;
+		border:2px solid #d7bc31;
+	}
+	section#pot{
+		margin-top:6px;
+	}	
+	@-webkit-keyframes fadeInBrand{
+		0%{margin-top:50vh;height:181px;opacity:0;}
+		100%{margin-top:50vh;height:181px;opacity:1;}
+	}
+	@keyframes fadeInBrand{
+		0%{margin-top:50vh;height:181px;opacity:0;}
+		100%{margin-top:50vh;height:181px;opacity:1;}
+	}
+	@-webkit-keyframes upBrand{
+		0%{margin-top:50vh;height:181px;}
+		100%{margin-top:22vh;height:120px;}	
+	}
+	@keyframes upBrand{
+		0%{margin-top:50vh;height:181px;}
+		100%{margin-top:22vh;height:120px;}
+	}
+	.overlay_suit_image{
+		height: 33px;
 	}
 }

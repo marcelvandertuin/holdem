@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>holdem</title>
+		<title>Holdem</title>
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
 		<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
@@ -30,8 +30,8 @@
 		<link rel="stylesheet" type="text/css" href="css/john.css">
 		<link rel="stylesheet" type="text/css" href="css/props.css">
 		<link rel="stylesheet" type="text/css" href="css/controls.css">
-		<link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
+		<link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 		<script src="js/main.js"></script>
 		<script src="js/controls.js"></script>
 		<script src="js/browser.js"></script>
@@ -40,9 +40,37 @@
 		<script src="js/evaluateHands.js"></script>
 		<script src="js/brain.js"></script>
 		<script src="js/dataSet.js"></script>
+		<script>
+			// https://browser-update.org/#install
+			var $buoop = {required:{e:-4,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2021.03 }; 
+			function $buo_f(){ 
+			 var e = document.createElement("script"); 
+			 e.src = "//browser-update.org/update.min.js"; 
+			 document.body.appendChild(e);
+			};
+			try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+			catch(e){window.attachEvent("onload", $buo_f)}
+		</script>
 	</head>
 	<body>
 		<main>
+			<section class="overlay">	
+				<section class="overlay_brand">	
+					<img class="overlay_brand_image" alt="suit image brand" src="images/brand.png">
+				</section>
+				<section class="overlay_suit_1">	
+					<img class="overlay_suit_image overlay_suit_image_1" alt="suit image diamond" src="images/diamonds.png">
+				</section>
+				<section class="overlay_suit_2">	
+					<img class="overlay_suit_image overlay_suit_image_2" alt="suit image heart" src="images/hearts.png">
+				</section>
+				<section class="overlay_suit_3">	
+					<img class="overlay_suit_image overlay_suit_image_3" alt="suit image spade" src="images/spades.png">
+				</section>
+				<section class="overlay_suit_4">	
+					<img class="overlay_suit_image overlay_suit_image_4" alt="suit image clover" src="images/clovers.png">
+				</section>
+			</section>				
 			<section class="table">		
 				<section id="dai"></section>		
 				<section class="top">
@@ -57,10 +85,10 @@
 				</section>
 				<section class="center">
 					<section id="holdem">
-						<img src="images/g830-7-3-3.png" alt="holdem">
+						<img src="images/signature.png" alt="holdem">
 					</section>
 					<section id="board">					
-						<a class="actionBtns" onclick="preFlop()">start</a>
+						<a class="actionBtns actionBtns_start" onclick="preFlop()">start</a>
 					</section>					
 					<section class="potAction">				
 						<section id="pot"></section>

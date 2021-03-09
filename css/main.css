@@ -29,3 +29,58 @@ section.table{
 		". center controls"
 		". bottom .";
 }
+section.overlay{
+	display:grid;
+	grid-template-columns:repeat(8, 1fr);
+	grid-auto-rows:50vh;
+	height:100vh;
+	background: #1b211d;
+	background-image:url("../images/holdemPattern.png");
+	background-repeat:repeat;
+	background-size:75px 75px;	
+	overflow:hidden;
+	z-index: 10px;
+	grid-template-areas:
+		"overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand overlay_brand"
+		". . overlay_suit_1 overlay_suit_2 overlay_suit_3 overlay_suit_4 . . ";
+}
+section.overlay_brand{
+	grid-area: overlay_brand;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay_brand_image{
+	margin-top: 19vh;
+	height: 180px;
+	width: auto;
+}
+section.overlay_suit_1{
+	grid-area: overlay_suit_1;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.overlay_suit_2{
+	grid-area: overlay_suit_2;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.overlay_suit_3{
+	grid-area: overlay_suit_3;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.overlay_suit_4{
+	grid-area: overlay_suit_4;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay_suit_image{
+	height: 63px;
+	width: auto;
+	margin-top: -16vh;
+}

@@ -117,14 +117,14 @@ const outputDealer = (player, blind) => {
 	let btn = '';
 	let dealer = '';	
 	if(blind === 'SB' && player == 0){
-			dealer = makeNode('section',[['class', 'dealer dealerTop']], 'D');
-			btn = document.querySelector(`section#button_${player}`);
-			btn.appendChild(dealer);
-		}else if(blind === 'SB' && player == 1){
-			dealer = makeNode('section',[['class', 'dealer dealerBottom']], 'D');
-			btn = document.querySelector(`section#button_${player}`);
-			btn.appendChild(dealer);
-		}
+		dealer = makeNode('section',[['class', 'dealer dealerTop']], 'D');
+		btn = document.querySelector(`section#button_${player}`);
+		btn.appendChild(dealer);
+	}else if(blind === 'SB' && player == 1){
+		dealer = makeNode('section',[['class', 'dealer dealerBottom']], 'D');
+		btn = document.querySelector(`section#button_${player}`);
+		btn.appendChild(dealer);
+	}
 }
 
 const convertCards = (card) => {
@@ -158,7 +158,8 @@ const displayCard = (player, hand) => {
 		let result = hand[i].split(' ');
 		let card = makeNode('section', [['class', 'card']]);	
 		let cardRank = makeNode('section', [['class', `cardRank cardColor_${result[1].substring(1, 2)}`]], convertCards(result[0]));
-		let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]], result[1].substring(0, 1));
+		let cardSuit = makeNode('section', [['class', `cardSuit cardColor_${result[1].substring(1, 2)}`]]);		
+		cardSuit.innerHTML = setSuit(result[1].substring(0, 1));		
 		card.appendChild(cardRank);
 		card.appendChild(cardSuit);	
 		document.querySelector(`section#hand_${player}`).appendChild(card);
@@ -210,6 +211,22 @@ const clearInfo = () => {
 		document.querySelector(`section#info_${players[i].player}`).innerHTML = '';
 	}	
 }
+
+const setSuit = (type) => {
+	if(type === '♦'){
+		return '<img class="suit_image" alt="suit image diamonds" src="images/diamonds.png">';
+	}else if(type === '♥'){
+		return '<img class="suit_image" alt="suit image hearts" src="images/hearts.png">';
+	}else if(type === '♠'){
+		return '<img class="suit_image" alt="suit image spades" src="images/spades.png">';
+	}else{
+		return '<img class="suit_image" alt="suit image clovers" src="images/clovers.png">';
+	}	
+}
+
+setTimeout(function(){
+  document.querySelector('section.overlay').style.display = 'none'; 
+ }, 7400);
 
 const makeNode = (type, attr=[], text='') => {
 	let node = document.createElement(type);

@@ -17,14 +17,13 @@ section#holdem{
 section#holdem img{
 	height:65px;
 	width:auto;
-	margin-bottom:-30px;
+	margin-bottom:-45px;
 }
 section#board{
 	grid-area:board;
 	display:flex;
     justify-content:center;
     align-items:center;
-	margin-top: -19px;
 }
 section.potAction{
 	grid-area:potAction;
@@ -41,8 +40,7 @@ section#pot{
 	font-weight:bold;
     justify-content:center;
     align-items:center;	
-	text-align:center;
-	margin-top: -6px;	
+	text-align:center;	
 }
 section#potInfo{
 	grid-area:potInfo;
